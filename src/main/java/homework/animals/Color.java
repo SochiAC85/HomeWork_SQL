@@ -33,7 +33,7 @@ public enum Color {
         }
         String normalized = color.trim().toLowerCase();
         for (Color c : values()) {
-            if (c.getValue().toLowerCase().equals(normalized)) {
+            if (c.name().toLowerCase().equals(normalized)) {
                 return c;
             }
         }

@@ -41,7 +41,6 @@ public abstract class AbsBaseTable {
         idbConnectionManager.execute(sql);
     }
 
-
     protected String convertMapColumnsToString() {
         if (columns.isEmpty()) {
             return "";
@@ -50,7 +49,6 @@ public abstract class AbsBaseTable {
                 .map(entry -> entry.getKey() + " " + entry.getValue())
                 .collect(Collectors.joining(", "));
     }
-
 
     protected Map<String, String> getColumns() {
         return columns;
